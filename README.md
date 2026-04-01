@@ -155,4 +155,4 @@ Before submitting, verify that your repository includes all of the following:
 
 ## Next
 * [Grading rubrics](grading_rubric.md)
-* [Frequently Asked Questions (FAQ)] - coming soon
+* [Frequently Asked Questions (FAQ)](guidance_and_faq.md)
