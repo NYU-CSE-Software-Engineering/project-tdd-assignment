@@ -95,14 +95,15 @@ Your GitHub Actions workflow file should run both test suites. A minimal example
 on: [push, pull_request]
 jobs:
 test:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
-- uses: ruby/setup-ruby@v1
-with: { bundler-cache: true }
-- run: bundle exec rails db:test:prepare
-- run: bundle exec rspec
-- run: bundle exec cucumber
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - run: bundle exec rails db:test:prepare
+    - run: bundle exec rspec
+    - run: bundle exec cucumber
 ```
 
 Consult the [GitHub Actions](https://docs.github.com/en/actions) documentation and the 
@@ -150,8 +151,8 @@ Before submitting, verify that your repository includes all of the following:
 - [ ] Commit messages on feature branches follow the [RED] / [GREEN] / [REFACTOR] convention.
 - [ ] At least 2 Cucumber feature files per team member (one per implemented feature).
 - [ ] RSpec specs covering model validations, controller actions, and sad paths for all implemented features.
-- [ ] `.github/workflows/ruby.yml` is present and runs both Rspec and Cucumber.
+- [ ] `.github/workflows/ci.yml` is present and runs both Rspec and Cucumber.
 
 ## Next
-[Grading rurics] - Coming soon
-[Frequently Asked Questions (FAQ)] - coming soon
+* [Grading rubrics](grading_rubric.md)
+* [Frequently Asked Questions (FAQ)] - coming soon
