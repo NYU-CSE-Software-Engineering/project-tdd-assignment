@@ -1,6 +1,6 @@
 # Grading Rubric
 
-## Team
+## Team Grading Rubric (Max 115 pts.)
 
 | Category                         | Excellent                                                                                                                 | Satisfactory                                                                                                      | Needs Improvement                                                                                                          |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -10,14 +10,24 @@
 | CI & Environment                 | **7–10 pts**<br>CI pipeline runs all suites (RSpec and Cucumber) on every push; main branch is 100% green.                | **3–6 pts**<br>CI is set up and runs, but may be flaky. Only one suite (e.g., just RSpec) runs.                   | **0–2 pts**<br>CI is not set up, or final build is failing. Test suites are not configured correctly.                      |
 | Code Quality & Functionality     | **7–10 pts**<br>Code is clean, DRY, and well-factored. Both features work as defined by the BDD specs.                    | **3–6 pts**<br>Code works and passes tests, but shows little evidence of refactoring (e.g., bloated controllers). | **0–2 pts**<br>Code is buggy, does not pass tests, or is poorly written (no refactoring).                                  |                              
 
-## Individual Grading Rubric (Max. 18 points)
+| Criteria / Deliverables Location                                               | Met Requirement (3 pt.) | Failed to Meet Requirement (0 pts.) |
+|--------------------------------------------------------------------------------|-------------------------|-------------------------------------|
+| GitHub Actions workflow file: `.github/workflows/ci.yml`                       |                         |                                     |
+| Model specs: `spec/models/*_spec.rb`                                           |                         |                                     |
+| Request specs: `spec/requests/*_spec.rb`                                       |                         |                                     |
+| RSpec configuration files: `spec/rails_helper.rb` and/or `spec/spec_helper.rb` |                         |                                     |
+| Rails MVC files: `app/models/`, `app/controllers/`, `app/views/`               |                         |                                     |
 
-| Criteria                                                                                                                                           | Meets Criteria (3 pts.) | Fails To Meet Criteria (0 pts.) |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------------------|
-| Member created at least 3 branches / pull requests for TDD work. Pull request contains intelligent non-trivial comment                             |                         |                                 |
-| Member's pull request requests review from a teammate by adding them as a Reviewer and @mentioning them in a comment using their GitHub username.  |                         |                                 |
-| Member performed code reviews for 4 or more pull requests of other teammate's pull request. Code review includes non-trivial comments by reviewer. |                         |                                 |
-| Member's pull request Member's pull request obtained approval to merge through the code review process of at least 1 teammate.                     |                         |                                 |
-| Member performs merge to `main` branch of the branch/pull request they opened/created.                                                             |                         |                                 |
-| Member did not merge another member's branch/pull request.                                                                                         |                         |                                 |
+## Individual Grading Rubric (Max. 24 points)
+
+| Criteria                                                                                                                                                                                                  | Meets Criteria (3 pts.) | Fails To Meet Criteria (0 pts.) |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------------------|
+| Member created at least 3 branches / pull requests for TDD work. Pull request contains intelligent non-trivial comment                                                                                    |                         |                                 |
+| Member's pull request comment or pull request description requests a review from a teammate by adding them as a Reviewer and @mentioning them in a comment or PR description using their GitHub username. |                         |                                 |
+| Member performed code reviews for 4 or more pull requests of other teammate's pull request. Code review includes non-trivial comments by reviewer.                                                        |                         |                                 |
+| Member's pull request Member's pull request obtained approval to merge through the code review process of at least 1 teammate.                                                                            |                         |                                 |
+| Member performs merge to `main` branch of the branch/pull request they opened/created.                                                                                                                    |                         |                                 |
+| Member did not merge another member's branch/pull request.                                                                                                                                                |                         |                                 |
+| Member may not merge a PR with a failing CI build.                                                                                                                                                        |                         |                                 |
+| All of member's commits start with `[RED]`, `[GREEN]`, or `[REFACTOR]`                                                                                                                                    |                         |                                 |
 

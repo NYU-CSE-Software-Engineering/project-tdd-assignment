@@ -140,19 +140,6 @@ over complete implementations that are not tested.
 ### What to Submit
 Submit your team's GitHub repository via Gradescope by the deadline. Ensure the repository is accessible to the course staff.
 
-### Repository Checklist
-Before submitting, verify that your repository includes all of the following:
-- [ ] `main` branch is protected and all tests are passing (green CI badge or green check on main).
-- [ ] At least 3 branches per team member visible in the branch history or as merged PRs.
-- [ ] At least 3 pull requests per team member, each with a substantive description.
-- [ ] Each PR has at least one formal review from a teammate with non-trivial comments.
-- [ ] Each PR was merged by its author (not a teammate).
-- [ ] Each team member has reviewed at least 4 PRs from teammates.
-- [ ] Commit messages on feature branches follow the [RED] / [GREEN] / [REFACTOR] convention.
-- [ ] At least 2 Cucumber feature files per team member (one per implemented feature).
-- [ ] RSpec specs covering model validations, controller actions, and sad paths for all implemented features.
-- [ ] `.github/workflows/ci.yml` is present and runs both Rspec and Cucumber.
-
 ## Next
 * [Grading rubrics](grading_rubric.md)
 * [Frequently Asked Questions (FAQ)](guidance_and_faq.md)
