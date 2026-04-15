@@ -130,8 +130,8 @@ Step definitions must use Capybara for browser-level feature testing where a UI 
 * At least one _sad-path_ test per feature (e.g., what happens when required data is missing or the user lacks permission).
 * Tests must be self-explanatory: use descriptive describe, context, and it blocks.
 
-[!NOTE]
-We strongly advise the use of the [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem. Although we don't 
+> [!NOTE]
+> We strongly advise the use of the [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem. Although we don't 
 expect 100% line coverage, having the gem added and being able to see its metric is a great opportunity for your
 professional development.
 
