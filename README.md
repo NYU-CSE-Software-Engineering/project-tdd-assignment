@@ -67,6 +67,7 @@ Open a pull request (PR) to merge each feature branch into main. Each PR must:
 * Request a code review from all team members by assigning each of them as a Reviewer in GitHub AND mentioning their @username in the PR description or a comment.
 * Not be merged until at least one teammate has formally approved the PR via GitHub's review system.
 * Be merged by the PR author, not a teammate.
+* PRs are only merged when tests are in a fully green state.
 
 ### Code Review Requirements
 Each team member must review at least 4 pull requests opened by teammates. A code review must:
