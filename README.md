@@ -48,7 +48,7 @@ process. A commit without a phase prefix will not receive credit for demonstrati
 ## 3. Individual Requirements
 
 ### Features to Implement
-Each team member is responsible for implementing 2 of their previously defined core features using TDD. These features 
+Each team member is responsible for implementing 3 of their previously defined core features using TDD. These features 
 were documented in your user stories and acceptance tests from the prior assignment.
 * Do not choose features that have already been substantially implemented. The TDD process must be visible.
 * If there is overlap between team members' features, coordinate early to avoid conflicts. Use branches to isolate work.
@@ -64,7 +64,7 @@ All feature work must happen on a dedicated branch. Never commit feature work di
 Open a pull request (PR) to merge each feature branch into main. Each PR must:
 * Have a descriptive title that names the feature and the TDD phase if relevant.
 * Include a non-trivial description in the PR body: explain what the feature does, link to the relevant user story, describe your test approach, and note anything interesting or difficult about the implementation.
-* Request a code review from at least one teammate by assigning them as a Reviewer in GitHub AND mentioning their @username in the PR description or a comment.
+* Request a code review from all team members by assigning each of them as a Reviewer in GitHub AND mentioning their @username in the PR description or a comment.
 * Not be merged until at least one teammate has formally approved the PR via GitHub's review system.
 * Be merged by the PR author, not a teammate.
 
@@ -119,7 +119,7 @@ dependencies, and set a PR review schedule.
 ## 5. Test Expectations
 
 ### Cucumber (BDD) Scenarios
-At least one Cucumber feature file per implemented feature (2 per team member minimum).
+At least one Cucumber feature file per implemented feature (3 per team member minimum).
 Scenarios must cover the primary happy path and at least one sad path (e.g., invalid input, unauthorized access).
 Step definitions must use Capybara for browser-level feature testing where a UI is involved.
 
@@ -129,8 +129,13 @@ Step definitions must use Capybara for browser-level feature testing where a UI 
 * At least one _sad-path_ test per feature (e.g., what happens when required data is missing or the user lacks permission).
 * Tests must be self-explanatory: use descriptive describe, context, and it blocks.
 
+[! NOTE]
+We strongly advise the use of the [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem. Although we don't 
+expect 100% line coverage, having the gem added and being able to see its metric is a great opportunity for your
+professional development.
+
 ### What Is Not Required
-* 100% line coverage across the entire codebase. Coverage of the 2 features per person is what matters.
+* 100% line coverage across the entire codebase. Coverage of the 3 features per person is what matters.
 * Full end-to-end implementation of the entire application. Partial implementations that are well-tested are preferred 
 over complete implementations that are not tested.
 * JavaScript testing. Focus on server-side Rails behavior.
