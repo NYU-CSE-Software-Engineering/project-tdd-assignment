@@ -6,7 +6,7 @@ At this point in the semester, your team has defined your project, produced a si
 low-fidelity diagrams, and each member has identified three core features with detailed user stories and BDD acceptance
 tests. Some initial implementation should already exist in your repository.
 
-This assignment asks each team member to implement two of their core features using a disciplined Test-Driven
+This assignment asks each team member to implement three of their core features using a disciplined Test-Driven
 Development (TDD) process anchored by Behavior-Driven Development (BDD) acceptance scenarios. The goal is not a fully
 working application — it is evidence of a rigorous engineering process visible in your git history.
 
@@ -57,7 +57,7 @@ were documented in your user stories and acceptance tests from the prior assignm
 ### Branch Requirements
 All feature work must happen on a dedicated branch. Never commit feature work directly to `main`.
 * Create a new branch for each feature (or for a logical sub-increment of a feature). A minimum of 3 branches per team member is required.
-* Naming convention: `feature/<your-initials>/<short-feature-name>`  (e.g., `feature/jd/user-login`)
+* Branch naming convention: `feature/<your-nyuid>/<short-feature-name>`  (e.g., `feature/pd80/user-login`)
 * Your branch history must show the Red-Green-Refactor commits within that branch before you open a pull request.
 
 ### Pull Request Requirements
@@ -78,7 +78,7 @@ Each team member must review at least 4 pull requests opened by teammates. A cod
   * Recommending extraction of a method to reduce duplication.
   * Identifying a potential security or validation concern.
   * Providing positive feedback on a well-structured test or clever solution.
-* Examples of trivial (unacceptable) comments: 'Looks good!', 'LGTM', 'OK'.
+* Examples of trivial (unacceptable) comments: 'Looks good!', 'LGTM', 'OK', or '+1'
 
 ## 4. Team Requirements
 ### Git Repository Setup
@@ -93,18 +93,21 @@ Your GitHub Actions workflow file should run both test suites. A minimal example
 
 ```yaml
 # .github/workflows/ci.yml
+name: CI
+
 on: [push, pull_request]
+
 jobs:
-test:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
-    - uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
-    - run: bundle exec rails db:test:prepare
-    - run: bundle exec rspec
-    - run: bundle exec cucumber
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle exec rails db:test:prepare
+      - run: bundle exec rspec
+      - run: bundle exec cucumber
 ```
 
 Consult the [GitHub Actions](https://docs.github.com/en/actions) documentation and the 
