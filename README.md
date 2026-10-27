@@ -57,7 +57,7 @@ were documented in your user stories and acceptance tests from the prior assignm
 ### Branch Requirements
 All feature work must happen on a dedicated branch. Never commit feature work directly to `main`.
 * Create a new branch for each feature (or for a logical sub-increment of a feature). A minimum of 3 branches per team member is required.
-* Naming convention: `feature/<your-initials>/<short-feature-name>`  (e.g., `feature/jd/user-login`)
+* Branch naming convention: `feature/<your-nyuid>/<short-feature-name>`  (e.g., `feature/pd80/user-login`)
 * Your branch history must show the Red-Green-Refactor commits within that branch before you open a pull request.
 
 ### Pull Request Requirements
@@ -78,7 +78,7 @@ Each team member must review at least 4 pull requests opened by teammates. A cod
   * Recommending extraction of a method to reduce duplication.
   * Identifying a potential security or validation concern.
   * Providing positive feedback on a well-structured test or clever solution.
-* Examples of trivial (unacceptable) comments: 'Looks good!', 'LGTM', 'OK'.
+* Examples of trivial (unacceptable) comments: 'Looks good!', 'LGTM', 'OK', or '+1'
 
 ## 4. Team Requirements
 ### Git Repository Setup
