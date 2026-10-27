@@ -93,18 +93,21 @@ Your GitHub Actions workflow file should run both test suites. A minimal example
 
 ```yaml
 # .github/workflows/ci.yml
+name: CI
+
 on: [push, pull_request]
+
 jobs:
-test:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
-    - uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
-    - run: bundle exec rails db:test:prepare
-    - run: bundle exec rspec
-    - run: bundle exec cucumber
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle exec rails db:test:prepare
+      - run: bundle exec rspec
+      - run: bundle exec cucumber
 ```
 
 Consult the [GitHub Actions](https://docs.github.com/en/actions) documentation and the 
