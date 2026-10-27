@@ -6,7 +6,7 @@ At this point in the semester, your team has defined your project, produced a si
 low-fidelity diagrams, and each member has identified three core features with detailed user stories and BDD acceptance
 tests. Some initial implementation should already exist in your repository.
 
-This assignment asks each team member to implement two of their core features using a disciplined Test-Driven
+This assignment asks each team member to implement three of their core features using a disciplined Test-Driven
 Development (TDD) process anchored by Behavior-Driven Development (BDD) acceptance scenarios. The goal is not a fully
 working application — it is evidence of a rigorous engineering process visible in your git history.
 
